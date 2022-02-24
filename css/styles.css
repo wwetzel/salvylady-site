@@ -10,6 +10,12 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ 
+ /* Y-#F1DB0E 
+    B-#0EF1DB
+    P-#DB0EF1
+ */
+ 
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -48,11 +54,20 @@
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
-  --bs-dark-rgb: 33, 37, 41;
-  --bs-white-rgb: 255, 255, 255;
+  
+  /* --bs-dark-rgb: 33, 37, 41; */
+  --bs-dark-rgb: 241, 219, 14;
+  
+  /* --bs-white-rgb: 255, 255, 255; */
+  --bs-white-rgb: 33, 37, 41;
+  
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
+  /* --bs-body-color-rgb: #F1DB0E; */
+  
   --bs-body-bg-rgb: 255, 255, 255;
+  /* --bs-body-bg-rgb: #F1DB0E; */
+  
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -3030,7 +3045,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
+  /* background-color: #0d6efd; */
+  background-color: #db0ef1;
   border-color: #0d6efd;
 }
 .btn-primary:hover {
@@ -3981,8 +3997,12 @@ textarea.form-control-lg {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
-  background-color: #fff;
+  /* color: #495057; */
+  /* color: rgba(33, 37, 41, 0.5); */
+  color: rgba(33, 37, 41, 0.5);
+
+  /* background-color: #fff; */
+  background-color: rgba(33, 37, 41, 0.5);
   border-color: #dee2e6 #dee2e6 #fff;
 }
 .nav-tabs .dropdown-menu {
@@ -7759,10 +7779,16 @@ textarea.form-control-lg {
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
 }
 
+/* .text-white { */
+  /* --bs-text-opacity: 1; */
+  /* color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important; */
+/* } */
+
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
 }
+
 
 .text-body {
   --bs-text-opacity: 1;
@@ -7779,9 +7805,14 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
+/* .text-white-50 { */
+  /* --bs-text-opacity: 1; */
+  /* color: rgba(255, 255, 255, 0.5) !important; */
+/* } */
+
 .text-white-50 {
   --bs-text-opacity: 1;
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(33, 37, 41, 0.5) !important;
 }
 
 .text-reset {
